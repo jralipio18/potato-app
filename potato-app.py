@@ -13,11 +13,10 @@ st.set_page_config(page_title="🥔 Potato Disease Classifier 🥔", layout="cen
 # -- Constants --
 MODEL_URL = "https://huggingface.co/datasets/jralipio18/potato/resolve/main/potato_model.h5"
 MODEL_PATH = "potato_model.h5"
-IMG_SIZE = (150, 150)  # Update if your model uses a different size
+IMG_SIZE = (224, 224)  # Update if your model uses a different size
 CLASS_NAMES = [
     'Common Scab', 'Blackleg', 'Dry Rot', 
-    'Pink Rot', 'Black Scurf', 'Healthy', 'Miscellaneous'
-]
+    'Pink Rot', 'Black Scurf', 'Healthy', 'Miscellaneous']
 
 # -- Load Model with Caching --
 @st.cache_resource
