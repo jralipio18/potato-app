@@ -11,8 +11,8 @@ from PIL import Image
 st.set_page_config(page_title="🥔 Potato Disease Classifier 🥔", layout="centered")
 
 # -- Constants --
-MODEL_URL = "https://huggingface.co/datasets/jralipio18/potato/resolve/main/potato_model.h5"
-MODEL_PATH = "potato_model.h5"
+MODEL_URL = "https://huggingface.co/datasets/jralipio18/potato/resolve/main/mnv2_potato_model.h5"
+MODEL_PATH = "mnv2_potato_model.h5"
 IMG_SIZE = (50, 50)  # Update if your model uses a different size
 CLASS_NAMES = ['Common Scab', 'Blackleg', 'Dry Rot', 'Pink Rot', 'Black Scurf', 'Healthy', 'Miscellaneous']
 
